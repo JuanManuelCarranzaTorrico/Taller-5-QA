@@ -21,6 +21,7 @@ public class AscensorTest {
 
     public void SeCreaUnaPersona() throws Exception{
 
+            //Se prueba la creacion de persona.
 
         System.out.println("==================================== "+ascensor);
 
@@ -30,12 +31,17 @@ public class AscensorTest {
     }
     @Test
     public void CuandoElDestinoYElOrigenSonIguales() throws Exception {
+
+        //Se prueba la validacion de que el origen y destino de una persona no sean iguales.
+
         System.out.println("==================================== "+ascensor);
         exception.expect(Exception.class);
         ascensor.VerificarPersona(1,1);
     }
     @Test
     public void CuandoSubeUnaPersonaDePiso() throws Exception {
+
+        //Se hace una prueba simple de subir del piso 1 al 2
 
         System.out.println("==================================== "+ascensor);
 
@@ -45,6 +51,7 @@ public class AscensorTest {
     @Test
     public void CuandoSeLLamaAlAsensorDesdeOtroPiso() throws Exception {
 
+        //Se hace una prueba de llamar el asensor a al segundo piso para bajar al primer piso.
 
         System.out.println("==================================== "+ascensor);
 
