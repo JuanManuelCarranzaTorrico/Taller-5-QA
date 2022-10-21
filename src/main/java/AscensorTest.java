@@ -58,5 +58,14 @@ public class AscensorTest {
 
         assertEquals("El asensor Sube 1 pisos El asensor Baja 1 pisos ", ascensor.UsarAsensor(2,1));
     }
+
+    @Test
+    public void CuandoElDestinoYelOrigenSonElMismoEnElAsensor() throws Exception{
+        //Se Prueba el uso del asensor cuando el destino y origen de una persona es el mismo.
+        System.out.println("==================================== "+ascensor);
+        exception.expect(Exception.class);
+        ascensor.UsarAsensor(1,1);
+
+    }
 }
 
